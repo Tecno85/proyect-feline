@@ -18,15 +18,19 @@ main {
   color: rgba(255, 255, 255, 0.927);
 }
 
-main h1 {
+.titulo_y_parrafo h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
-main p {
+.titulo_y_parrafo p {
   font-size: 20px;
   line-height: 2rem;
+}
+
+.parrafo_2 {
+  margin-bottom: 2.5rem;
 }
 
 .felinos {
@@ -38,6 +42,7 @@ main p {
 
 .felinos p {
   margin: 0.7rem 0rem 2rem;
+  text-align: center;
 }
 
 footer {
@@ -58,8 +63,8 @@ footer {
 }
 
 .image_felidos {
-    border-radius: 0.5rem;
-    border: 0.5px solid black;
+  border-radius: 0.5rem;
+  border: 0.5px solid black;
 }
 
 footer p {
