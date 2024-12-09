@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Rationale&family=Share+Tech&display=swap");
+/* font-family: "Share Tech", serif; */
+/* font-family: "Rationale", serif; */
+/* font-family: "Anek Latin", serif; */
+
+body {
+  margin: 3rem 5rem 2rem 4rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(25, 47, 47);
+}
+
+main {
+  flex: 1;
+  font-family: "Anek Latin", serif;
+  color: rgba(255, 255, 255, 0.927);
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+main p {
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.felinos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.felinos p {
+  margin: 0.7rem 0rem 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  padding: 0;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 20px;
+}
+
+footer p {
+  padding: 0px;
+  font-family: "Share Tech", serif;
+  color: white;
+}
