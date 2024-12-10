@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Rationale&family=Share+Tech&display=swap");
+
 /* font-family: "Share Tech", serif; */
 /* font-family: "Rationale", serif; */
 /* font-family: "Anek Latin", serif; */
@@ -18,13 +19,14 @@ main {
   color: rgba(255, 255, 255, 0.927);
 }
 
-.titulo_y_parrafo h1 {
+.titulo_y_parrafos h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  font-family: "Anek Latin", serif;
 }
 
-.titulo_y_parrafo p {
+.titulo_y_parrafos p {
   font-size: 20px;
   line-height: 2rem;
 }
