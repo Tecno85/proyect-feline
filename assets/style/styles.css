@@ -1,38 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Rationale&family=Share+Tech&display=swap");
+:root {
+  --font-primary: "Share Tech", serif;
+  --font-secondaty: "Anek Latin", serif;
+  --font-size-base: 1.35rem;
+  --font-size-large: 2.8rem;
+  --font-size-small: 1.1rem;
+  --text-color-primary: rgba(255, 255, 255, 0.927);
+  --text-color-secondary: rgba(255, 255, 255, 0.873);
+  --bg-color: rgb(25, 47, 47);
+  --footer-color: rgba(0, 0, 0, 0.673);
+}
 
-/* font-family: "Share Tech", serif; */
-/* font-family: "Rationale", serif; */
-/* font-family: "Anek Latin", serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 3rem 5rem 2rem 4rem;
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  background-color: rgb(25, 47, 47);
+  min-height: 100vh;
+  background-color: var(--bg-color)
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 3rem 0rem;
+  font-family: var(--font-secondaty);
+  color: var(--text-color-primary);
 }
 
 main {
   flex: 1;
-  font-family: "Anek Latin", serif;
-  color: rgba(255, 255, 255, 0.927);
+  font-family: var(--font-secondaty);
+  color: var(--text-color-primary);
+  margin: 3rem 5rem 2rem 4rem;
 }
 
-.titulo_y_parrafos h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  font-family: "Anek Latin", serif;
-}
-
-.titulo_y_parrafos p {
-  font-size: 20px;
+.descripcion {
+  font-size: 1.35rem;
   line-height: 2rem;
+  color: var(--text-color-secondary);
 }
 
-.parrafo_2 {
-  margin-bottom: 2.5rem;
+.instruccion {
+  margin-bottom: 2.2rem;
 }
 
 .felinos {
@@ -45,11 +59,18 @@ main {
 .felinos p {
   margin: 0.7rem 0rem 2rem;
   text-align: center;
+  font-size: var(--font-size-small);
 }
 
 .image_felidos {
   border-radius: 0.5rem;
   border: 0.5px solid black;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.image_felidos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.639);
 }
 
 footer {
@@ -57,8 +78,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0rem 0.5rem;
-  padding: 0;
+  background-color: var(--footer-color);
+  padding: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .images {
@@ -70,8 +92,7 @@ footer {
 }
 
 footer p {
-  padding: 0px;
+  font-size: var(--font-size-small);
   font-family: "Share Tech", serif;
-  color: white;
-  margin-top: 0px;
+  color: var(--text-color-primary);
 }
