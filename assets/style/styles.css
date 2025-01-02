@@ -1,6 +1,7 @@
+/* Variables Globales */ 
 :root {
   --font-primary: "Share Tech", serif;
-  --font-secondaty: "Anek Latin", serif;
+  --font-secondary: "Anek Latin", serif;
   --font-size-base: 1.35rem;
   --font-size-large: 2.8rem;
   --font-size-small: 1.1rem;
@@ -10,6 +11,7 @@
   --footer-color: rgba(0, 0, 0, 0.673);
 }
 
+/* Reset y Estilos Globales */ 
 * {
   margin: 0;
   padding: 0;
@@ -62,13 +64,13 @@ main {
   font-size: var(--font-size-small);
 }
 
-.image_felidos {
+.image_felines {
   border-radius: 0.5rem;
   border: 0.5px solid black;
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.image_felidos:hover {
+.image_felines:hover {
   transform: scale(1.05);
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.639);
 }
@@ -79,11 +81,11 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--footer-color);
-  padding: 2rem;
+  padding: 1.5rem;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.images {
+.images-footer {
   display: flex;
   justify-content: center;
   align-items: center;
