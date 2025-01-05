@@ -1,42 +1,46 @@
-/* Variables Globales */ 
+/* Variables Globales */
 :root {
-  --font-primary: "Share Tech", serif;
-  --font-secondary: "Anek Latin", serif;
+  --font-primary: "Share Tech", serif, sans-serif;
+  --font-secondary: "Anek Latin", serif, sans-serif;
   --font-size-base: 1.35rem;
   --font-size-large: 2.8rem;
   --font-size-small: 1.1rem;
+  --font-size-large-media-query: 1.1rem;
+  --font-size-small-media-query: 0.9rem;
+  --font-size-small-media-query: 0.9rem;
   --text-color-primary: rgba(255, 255, 255, 0.927);
   --text-color-secondary: rgba(255, 255, 255, 0.873);
   --bg-color: rgb(25, 47, 47);
   --footer-color: rgba(0, 0, 0, 0.673);
 }
 
-/* Reset y Estilos Globales */ 
+/* Reset y Estilos Globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body y Footer*/
 body {
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--bg-color)
+  background-color: var(--bg-color);
 }
 
 header h1 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: var(--font-size-large);
   margin: 3rem 0rem;
-  font-family: var(--font-secondaty);
+  font-family: var(--font-secondary);
   color: var(--text-color-primary);
 }
 
 main {
   flex: 1;
-  font-family: var(--font-secondaty);
+  font-family: var(--font-secondary);
   color: var(--text-color-primary);
   margin: 3rem 5rem 2rem 4rem;
 }
@@ -45,6 +49,7 @@ main {
   font-size: 1.35rem;
   line-height: 2rem;
   color: var(--text-color-secondary);
+  text-align: justify;
 }
 
 .instruccion {
@@ -97,4 +102,38 @@ footer p {
   font-size: var(--font-size-small);
   font-family: "Share Tech", serif;
   color: var(--text-color-primary);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+    margin: 3rem 0rem;
+  }
+
+  main {
+    margin: 0.5rem 4rem 1rem 3rem;
+  }
+
+  .descripcion {
+    font-size: var(--font-size-large-media-query);
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+
+  .instruccion {
+    margin-bottom: 1.5rem;
+  }
+
+  .image_felines {
+    max-width: 90%;
+  }
+
+  .felinos p {
+    font-size: var(--font-size-small-media-query);
+  }
+
+  footer p {
+    font-size: var(--font-size-small-media-query);
+  }
 }
