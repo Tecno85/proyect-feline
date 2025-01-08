@@ -1,16 +1,17 @@
 /* Variables Globales */
 :root {
-  --font-primary: "Share Tech", serif, sans-serif;
+  --font-primary: "Rubik Vinyl", serif, sans-serif;
   --font-secondary: "Anek Latin", serif, sans-serif;
   --font-size-base: 1.35rem;
   --font-size-large: 2.8rem;
   --font-size-small: 1.1rem;
+  --font-size-small-footer: 1.25rem;
   --font-size-large-media-query: 1.1rem;
   --font-size-small-media-query: 0.9rem;
   --font-size-small-media-query: 0.9rem;
   --text-color-primary: rgba(255, 255, 255, 0.927);
   --text-color-secondary: rgba(255, 255, 255, 0.873);
-  --bg-color: rgb(25, 47, 47);
+  --bg-color: rgb(18, 41, 41);
   --footer-color: rgba(0, 0, 0, 0.673);
 }
 
@@ -33,9 +34,10 @@ body {
 header h1 {
   text-align: center;
   font-size: var(--font-size-large);
-  margin: 3rem 0rem;
+  margin: 5rem 0rem 1rem;
   font-family: var(--font-secondary);
   color: var(--text-color-primary);
+  font-family: var(--font-primary);
 }
 
 main {
@@ -111,8 +113,11 @@ footer {
 }
 
 footer p {
-  font-size: var(--font-size-small);
-  font-family: "Share Tech", serif;
+  font-size: var(--font-size-small-footer);
+  font-family: "Rationale", serif;
+  font-family: "Turret Road", serif;
+  font-family: "Iceland", serif;
+  font-weight: 300;
   color: var(--text-color-primary);
 }
 
