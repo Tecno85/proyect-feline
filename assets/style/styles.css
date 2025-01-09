@@ -2,9 +2,11 @@
 :root {
   --font-primary: "Rubik Vinyl", serif, sans-serif;
   --font-secondary: "Anek Latin", serif, sans-serif;
+  --font-footer: "Iceland", serif, sams-serif;
+  --font-size-large: 3.5rem;
   --font-size-base: 1.35rem;
-  --font-size-large: 2.8rem;
   --font-size-small: 1.1rem;
+  --font-size-large-title: 1.9rem;
   --font-size-small-footer: 1.25rem;
   --font-size-large-media-query: 1.1rem;
   --font-size-small-media-query: 0.9rem;
@@ -34,7 +36,7 @@ body {
 header h1 {
   text-align: center;
   font-size: var(--font-size-large);
-  margin: 5rem 0rem 1rem;
+  margin: 4rem 0rem 1rem;
   font-family: var(--font-secondary);
   color: var(--text-color-primary);
   font-family: var(--font-primary);
@@ -55,7 +57,7 @@ main {
 }
 
 .instruccion {
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.7rem;
 }
 
 .felinos {
@@ -114,8 +116,6 @@ footer {
 
 footer p {
   font-size: var(--font-size-small-footer);
-  font-family: "Rationale", serif;
-  font-family: "Turret Road", serif;
   font-family: "Iceland", serif;
   font-weight: 300;
   color: var(--text-color-primary);
@@ -124,8 +124,8 @@ footer p {
 /* Media Queries */
 @media (max-width: 480px) {
   header h1 {
-    font-size: 1.4rem;
-    margin: 3rem 0rem;
+    font-size: var(--font-size-large-title);
+    margin: 4rem 0rem 2rem;
   }
 
   main {
