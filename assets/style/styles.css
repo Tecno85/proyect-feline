@@ -6,6 +6,7 @@
   --font-size-large: 3.5rem;
   --font-size-base: 1.35rem;
   --font-size-small: 1.1rem;
+  --font-size-navbar: 1.5rem;
   --font-size-large-title: 1.9rem;
   --font-size-small-footer: 1.25rem;
   --font-size-large-media-query: 1.1rem;
@@ -24,6 +25,26 @@
   box-sizing: border-box;
 }
 
+/* Navbar*/
+
+.navbar {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--footer-color);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem 3rem;
+}
+
+.navbar p {
+  color: var(--text-color-primary);
+  font-family: var(--font-footer);
+  font-size: var(--font-size-navbar);
+  margin: 0.5rem;
+}
+
+
 /* Body y Footer*/
 body {
   padding: 0;
@@ -36,7 +57,7 @@ body {
 header h1 {
   text-align: center;
   font-size: var(--font-size-large);
-  margin: 4rem 0rem 1rem;
+  margin: 2rem 0rem 1rem;
   font-family: var(--font-secondary);
   color: var(--text-color-primary);
   font-family: var(--font-primary);
@@ -57,7 +78,7 @@ main {
 }
 
 .instruccion {
-  margin-bottom: 2.7rem;
+  margin: 1rem 0rem 2.7rem;
 }
 
 .felinos {
