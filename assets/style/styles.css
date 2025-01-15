@@ -29,15 +29,18 @@
 
 .navbar {
   display: flex;
-  justify-content:flex-end;
+  justify-content:space-between;
   align-items: center;
-  gap: 2rem;
   background-color: var(--footer-color);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 1.2rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
-.navbar p {
+.titles-felines {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 2rem;
   color: var(--text-color-primary);
   font-family: var(--font-footer);
   font-size: var(--font-size-navbar);
