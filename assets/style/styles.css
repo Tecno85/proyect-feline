@@ -11,7 +11,7 @@
   --font-size-small-footer: 1.25rem;
   --font-size-large-media-query: 1.1rem;
   --font-size-small-media-query: 0.9rem;
-  --font-size-small-media-query: 0.9rem;
+  --font-size-small-media-query-navbar: 1.1rem;
   --text-color-primary: rgba(255, 255, 255, 0.927);
   --text-color-secondary: rgba(255, 255, 255, 0.873);
   --bg-color: rgb(18, 41, 41);
@@ -29,16 +29,20 @@
 
 .navbar {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--footer-color);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 5rem;
 }
 
-.titles-felines {
+.icon-navbar {
+  margin-left: 1.5rem;
+}
+
+.titles-navbar {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   color: var(--text-color-primary);
@@ -46,7 +50,6 @@
   font-size: var(--font-size-navbar);
   margin: 0.5rem;
 }
-
 
 /* Body y Footer*/
 body {
@@ -97,7 +100,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px; 
+  max-width: 300px;
 }
 
 .image_felines {
@@ -112,7 +115,6 @@ main {
 .image_felines:hover {
   transform: scale(1.05);
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.639);
-  
 }
 .felinos p {
   margin: 0.7rem 0rem 2rem;
@@ -147,6 +149,27 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 480px) {
+  /* Navbar*/
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  .icon-navbar {
+    margin-left: 0rem;
+  }
+
+  .icon-leon {
+    max-width: 70%;
+  }
+
+  .titles-navbar {
+    gap: 0.7rem;
+    color: var(--text-color-primary);
+    font-family: var(--font-footer);
+    font-size: var(--font-size-small-media-query-navbar);
+    margin: 0.25rem;
+  }
+
   header h1 {
     font-size: var(--font-size-large-title);
     margin: 4rem 0rem 2rem;
