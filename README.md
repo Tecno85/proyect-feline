@@ -5,3 +5,4 @@ Estoy en proceso de construcción de este sitio Web, con el objetivo de ir famil
 - 09-01-2025: Corregi el nombre del archivo README.md, definí los estilos de las letras y los espacios del título principal incluendo la parte del responsive y finalmente comence a documentar mi progreso diario.  
 - 14-01-2025: Agregue el navbar y empece a darle estilo.
 - 15-01-2025: Agregue un icono de un león.
+- 17-01-2025: Agregue la media querie al navbar para dispositivos móviles. 

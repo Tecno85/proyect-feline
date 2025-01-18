@@ -1,21 +1,76 @@
 ## Consejos para mejorar el sitio web
 
-1. **Añade un menú de navegación**: Incluye un menú fijo en la parte superior o lateral para que los usuarios puedan moverse fácilmente entre las secciones principales.
+HTML
+Validación de accesibilidad:
 
-2. **Incluye un efecto parallax**: Haz que el fondo de la página se desplace a una velocidad diferente que el contenido, lo que agregará dinamismo.
+Añade atributos aria-label o aria-hidden en elementos decorativos o con texto no visible, como íconos, para mejorar la accesibilidad.
+html
+Copiar
+Editar
+<img src="assets/img/icon_leon.png" alt="Icono León" class="icon-leon" aria-hidden="true" />
+Consistencia en nombres:
 
-3. **Agrega animaciones sutiles**: Implementa animaciones con CSS, como desvanecimientos, transiciones suaves o efectos de desplazamiento.
+En el atributo meta, cambia descripcion por description (en inglés), ya que es el estándar reconocido por los motores de búsqueda.
+Uso semántico:
 
-4. **Incorpora una galería interactiva**: Permite que los usuarios naveguen entre las imágenes en un carrusel o galería con vista previa.
+Cambia los elementos <p> de la barra de navegación por una lista no ordenada (<ul> y <li>) para respetar la semántica.
+html
+Copiar
+Editar
+<ul class="titles-navbar">
+  <li><a href="#guepardo">Guepardo</a></li>
+  <li><a href="#pantera">Pantera</a></li>
+  <li><a href="#leopardo">Leopardo</a></li>
+</ul>
+Cuidado con enlaces externos:
 
-5. **Añade una sección de datos curiosos**: Crea una área donde se muestren datos interesantes sobre los félidos de forma rotativa o interactiva.
+Usa siempre el atributo rel="noopener noreferrer" en enlaces con target="_blank" para evitar problemas de seguridad.
+Jerarquía de encabezados:
 
-6. **Incorpora un botón de "Volver arriba"**: Coloca un botón flotante para que los usuarios puedan regresar rápidamente al inicio de la página.
+Mantén una jerarquía correcta. Cambia los títulos <p> dentro de los <article> por <h2> o <h3> según corresponda, para mejorar la semántica y el SEO.
+CSS
+Uso de comentarios organizados:
 
-7. **Agrega un formulario de contacto**: Proporciona un formulario sencillo para que los visitantes puedan enviarte comentarios o preguntas.
+Agrega comentarios descriptivos para cada sección de estilos para facilitar el mantenimiento.
+css
+Copiar
+Editar
+/* === Variables Globales === */
+:root { ... }
 
-8. **Incluye un mapa interactivo**: Muestra el hábitat natural de los félidos en un mapa interactivo que permita explorar diferentes regiones.
+/* === Reset y Estilos Globales === */
+* { ... }
 
-9. **Añade un pie de página más informativo**: Incluye enlaces útiles, información adicional o una pequeña biografía del autor.
+/* === Navbar === */
+.navbar { ... }
+Reduce repetición:
 
-10. **Optimiza para dispositivos móviles**: Asegúrate de que el diseño responda perfectamente en pantallas pequeñas y de que los elementos sean fáciles de tocar.
+Agrupa propiedades compartidas en clases comunes. Ejemplo: los estilos de texto en .titles-navbar y footer p podrían consolidarse.
+css
+Copiar
+Editar
+.text-secondary {
+  font-family: var(--font-footer);
+  font-size: var(--font-size-navbar);
+  color: var(--text-color-primary);
+}
+Evita unidades fijas innecesarias:
+
+Usa unidades relativas (em, rem, %) en lugar de unidades absolutas (px) para mejorar la adaptabilidad.
+Uso de prefijos:
+
+Considera agregar prefijos CSS para garantizar compatibilidad en navegadores más antiguos. Ejemplo: para transform o box-shadow.
+Media Queries específicas:
+
+Refina las consultas @media. Podrías incluir un escalado entre 481px y 768px para dispositivos tablet:
+css
+Copiar
+Editar
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
