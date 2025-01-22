@@ -45,10 +45,15 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  color: var(--text-color-primary);
   font-family: var(--font-footer);
   font-size: var(--font-size-navbar);
   margin: 0.5rem;
+}
+
+.titles-navbar li, a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+  list-style: none;
 }
 
 /* Body y Footer*/
@@ -137,7 +142,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 0px 0px 15px;
+  margin: 0px 0px 5px;
 }
 
 footer p {
@@ -176,7 +181,7 @@ footer p {
   }
 
   main {
-    margin: 0.5rem 4rem 1rem 3rem;
+    margin: 0.5rem 4rem 0rem 3rem;
   }
 
   .descripcion {
