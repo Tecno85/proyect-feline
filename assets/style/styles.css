@@ -7,7 +7,7 @@
   --font-size-base: 1.35rem;
   --font-size-small: 1.1rem;
   --font-size-navbar: 1.5rem;
-  --font-size-large-title: 1.9rem;
+  --font-size-large-title: 2rem;
   --font-size-small-footer: 1.25rem;
   --font-size-large-media-query: 1.1rem;
   --font-size-small-media-query: 0.9rem;
@@ -143,6 +143,10 @@ footer {
   align-items: center;
   gap: 10px;
   margin: 0px 0px 5px;
+}
+
+.icon-instagram {
+  margin-right: 0.4rem;
 }
 
 footer p {
