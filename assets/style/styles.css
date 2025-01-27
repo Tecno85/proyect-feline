@@ -63,6 +63,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--bg-color);
+  position: relative;
+  z-index: 1;
+  border: 2px solid red;
 }
 
 header h1 {
@@ -75,8 +78,6 @@ header h1 {
 }
 
 main {
-  position: relative;
-  z-index: 1;
   flex: 1;
   font-family: var(--font-secondary);
   color: var(--text-color-primary);
@@ -190,7 +191,9 @@ footer p {
 
   main {
     margin: 0.5rem 4rem 0rem 3rem;
-  }
+    position: relative;
+    z-index: 1;
+    flex: 1;  }
 
   .descripcion {
     font-size: var(--font-size-large-media-query);
