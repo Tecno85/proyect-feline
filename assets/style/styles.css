@@ -217,7 +217,8 @@ footer p {
   footer {
     position: relative;
     z-index: 2;
-    padding: 2rem;
+    padding: 6rem;
+    border: 6px solid white;
   }
 
   .icons-footer img {
