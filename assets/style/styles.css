@@ -65,7 +65,7 @@ body {
   background-color: var(--bg-color);
   position: relative;
   z-index: 1;
-  border: 2px solid red;
+  border: 5px solid red;
 }
 
 header h1 {
@@ -217,7 +217,6 @@ footer p {
     position: relative;
     z-index: 2;
     padding: 0.8rem;
-    margin: 0rem;
   }
 
   .icons-footer img {
