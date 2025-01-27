@@ -142,7 +142,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 2px;
-  margin: 0px 0px 1px;
+  margin: 0rem 0rem 0.2rem;
 }
 
 .icon-instagram {
@@ -190,7 +190,7 @@ footer p {
 
   .descripcion {
     font-size: var(--font-size-large-media-query);
-    line-height: 1.5rem;
+    line-height: 1rem;
     text-align: justify;
   }
 
@@ -204,6 +204,10 @@ footer p {
 
   .felinos p {
     font-size: var(--font-size-small-media-query);
+  }
+
+  footer {
+    padding: 0.5rem;
   }
 
   .images-footer img {
