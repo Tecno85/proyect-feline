@@ -137,7 +137,7 @@ footer {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.images-footer {
+.icons-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,10 +207,11 @@ footer p {
   }
 
   footer {
-    padding: 0.5rem;
+    padding: 0.8rem;
+    margin: 0rem;
   }
 
-  .images-footer img {
+  .icons-footer img {
     max-width: 90%;
   }
 
