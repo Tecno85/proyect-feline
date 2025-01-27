@@ -133,7 +133,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--footer-color);
-  padding: 1.5rem;
+  padding: 1rem;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -141,8 +141,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 0px 0px 5px;
+  gap: 2px;
+  margin: 0px 0px 1px;
 }
 
 .icon-instagram {
@@ -199,11 +199,15 @@ footer p {
   }
 
   .image_felines {
-    max-width: 90%;
+    max-width: 63%;
   }
 
   .felinos p {
     font-size: var(--font-size-small-media-query);
+  }
+
+  .images-footer img {
+    max-width: 90%;
   }
 
   footer p {
