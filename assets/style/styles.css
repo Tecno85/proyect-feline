@@ -75,6 +75,8 @@ header h1 {
 }
 
 main {
+  position: relative;
+  z-index: 1;
   flex: 1;
   font-family: var(--font-secondary);
   color: var(--text-color-primary);
@@ -132,6 +134,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
   background-color: var(--footer-color);
   padding: 1rem;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -207,6 +211,8 @@ footer p {
   }
 
   footer {
+    position: relative;
+    z-index: 2;
     padding: 0.8rem;
     margin: 0rem;
   }
