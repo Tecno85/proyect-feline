@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 5px solid red;
 }
 
 /* Navbar*/
@@ -65,7 +66,7 @@ body {
   background-color: var(--bg-color);
   position: relative;
   z-index: 1;
-  border: 5px solid red;
+  
 }
 
 header h1 {
@@ -216,7 +217,7 @@ footer p {
   footer {
     position: relative;
     z-index: 2;
-    padding: 0.8rem;
+    padding: 2rem;
   }
 
   .icons-footer img {
