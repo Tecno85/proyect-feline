@@ -8,3 +8,4 @@ Estoy en proceso de construcción de este sitio Web, con el objetivo de ir famil
 - 17-01-2025: Agregue la media querie al navbar para dispositivos móviles. 
 - 22-01-2025: Cambie el icono del Favicon y los vínculos a otros sitios del navbar.
 - 23-01-2025: Subiendo imágenes footer en formato SVG.
+- 29-01-2025: Agegue más íconos al footter.
